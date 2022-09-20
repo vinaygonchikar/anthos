@@ -1,0 +1,8 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  values:
+    global:
+      multiCluster:
+        # Provided to ensure a human readable name rather than a UUID.
+        clusterName: "cn-banded-lexicon-360413-us-central1-c-hello-cluster" # {"$ref":"#/definitions/io.k8s.cli.substitutions.cluster-name"}
